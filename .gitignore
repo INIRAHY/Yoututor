@@ -1,0 +1,14 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.DS_Store
+*.wav
+*.mp3
+*.ogg
+*.m4a
