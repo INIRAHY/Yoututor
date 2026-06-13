@@ -1,11 +1,17 @@
 # YouTutor — Multilingual AI Video Tutor
 
-YouTutor is a Streamlit-based multilingual AI tutor that allows users to ask questions about any YouTube video using Retrieval-Augmented Generation (RAG).The app extracts audio from YouTube videos, generates transcripts, retrieves relevant context using FAISS, and produces grounded answers using Groq LLMs. It also supports multilingual translation and optional voice replies.
+YouTutor transforms any YouTube video into an interactive multilingual tutor, enabling users to ask questions in their preferred language and receive grounded answers from the video's content. The app extracts audio from YouTube videos, generates transcripts, retrieves relevant context using FAISS, and produces grounded answers using Groq LLMs. It also supports multilingual translation and optional voice replies.
 
 It is designed for students, multilingual learners, and users who want to interact with educational video content more effectively through grounded AI-based question answering.
 
 ---
+## Demo
 
+Watch the project demonstration here:
+
+https://drive.google.com/file/d/17r831je4IdrPgwLr-mboCxrQy6vDB8qR/view?usp=sharing
+
+---
 ## Features
 
 * YouTube audio extraction using `yt-dlp` and `ffmpeg`
@@ -82,13 +88,25 @@ The app uses fallback systems for transcription, translation, and text-to-speech
 ## Project Structure
 
 ```text
-app.py
-requirements.txt
-README.md
+.
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .streamlit/
+    ├── config.toml
+    └── secrets.toml.example
 ```
-
 ---
 
+## Future Improvements
+
+- PDF and document support
+- Chat history persistence
+- Video timestamp citations
+- Multi-video knowledge base
+
+---
 ## Important Notes
 
 * Remove hardcoded API keys before deployment
